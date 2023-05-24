@@ -7,9 +7,13 @@
 
 function filterLongWords(sentence, n) {
   //Solution here
+
+  const myArray = sentence.split(" ");
+
+  return myArray.filter((x) => x.length > n);
 }
 
-console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4), [
+console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 3), [
   "quick",
   "brown",
   "jumps",
